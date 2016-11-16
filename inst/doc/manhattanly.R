@@ -1,5 +1,5 @@
 ## ----setup, include=FALSE, echo=TRUE, message=FALSE----------------------
-#library(plotly)
+library(plotly)
 #library(manhattanly)
 library(knitr)
 knitr::opts_chunk$set(echo = TRUE, 
@@ -24,6 +24,9 @@ manhattanly(subset(HapMap, CHR %in% 4:7), snp = "SNP", gene = "GENE")
 
 ## ------------------------------------------------------------------------
 qqly(subset(HapMap, CHR %in% 4:7), snp = "SNP", gene = "GENE")
+
+## ---- eval=FALSE---------------------------------------------------------
+#  volcanoly(subset(HapMap, CHR %in% 4:7), snp = "SNP", gene = "GENE")
 
 ## ---- eval = TRUE--------------------------------------------------------
 manhattanly(subset(HapMap, CHR %in% 4:7), snp = "SNP", gene = "GENE", highlight = significantSNP)

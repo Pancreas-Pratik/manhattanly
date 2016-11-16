@@ -1,12 +1,12 @@
 Package: manhattanly
 Type: Package
 Title: Interactive Q-Q and Manhattan Plots Using 'plotly.js'
-Version: 0.1.0
-Date: 2016-06-07
+Version: 0.2.0
+Date: 2016-11-17
 LazyData: true
 Authors@R: c(person("Sahir", "Bhatnagar", email = "sahir.bhatnagar@gmail.com",
     role = c("aut", "cre"), comment = "http://sahirbhatnagar.com/"))
-Description: Create interactive Q-Q and manhattan plots that are usable from the R console,
+Description: Create interactive Q-Q, manhattan and volcano plots that are usable from the R console,
     in the 'RStudio' viewer pane, in 'R Markdown' documents, and in 'Shiny' apps.
     Hover the mouse pointer over a point to show details or drag a rectangle to
     zoom. A manhattan plot is a popular graphical method for visualizing results
@@ -24,7 +24,8 @@ Description: Create interactive Q-Q and manhattan plots that are usable from the
     Once uploaded to a 'plotly' account, 'plotly' graphs (and the data behind them) 
     can be viewed and modified in a web browser.
 Depends: R (>= 3.0.0)
-Imports: stats, magrittr (>= 1.0.1), plotly (>= 3.6.0), ggplot2
+Imports: stats, magrittr (>= 1.0.1), plotly (>= 4.5.6), ggplot2 (>=
+        2.1.0)
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 License: MIT + file LICENSE
@@ -33,8 +34,8 @@ URL: https://github.com/sahirbhatnagar/manhattanly/,
 BugReports: https://github.com/sahirbhatnagar/manhattanly/issues
 RoxygenNote: 5.0.1
 NeedsCompilation: no
-Packaged: 2016-06-08 15:32:04 UTC; sahir
+Packaged: 2016-11-15 23:55:25 UTC; sahir
 Author: Sahir Bhatnagar [aut, cre] (http://sahirbhatnagar.com/)
 Maintainer: Sahir Bhatnagar <sahir.bhatnagar@gmail.com>
 Repository: CRAN
-Date/Publication: 2016-06-08 17:52:18
+Date/Publication: 2016-11-16 01:56:53

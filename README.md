@@ -1,15 +1,26 @@
 [![Travis-CI Build Status](https://travis-ci.org/sahirbhatnagar/manhattanly.svg?branch=master)](https://travis-ci.org/sahirbhatnagar/manhattanly)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/manhattanly)](https://cran.r-project.org/package=manhattanly)
 
+<!--
+![](http://cranlogs.r-pkg.org/badges/manhattanly?color=yellow)
+![](http://cranlogs.r-pkg.org/badges/grand-total/manhattanly?color=yellowgreen)
+-->
 
 # manhattanly
 
-The goal of manhattanly is to create interactive manhattan and Q-Q plots
+The goal of manhattanly is to create interactive manhattan, Q-Q and volcano plots
 
 ![](http://i.imgur.com/n88LCky.gif)
 
 ## Installation
 
-You can install manhattanly from github with:
+You can install `manhattanly` from [CRAN](https://cran.r-project.org/package=manhattanly):
+
+```R
+install.packages("manhattanly")
+```
+
+Alternatively, you can install the development version of `manhattanly` from [GitHub](https://github.com/sahirbhatnagar/manhattanly) with:
 
 ```R
 install.packages("devtools")
@@ -22,7 +33,7 @@ See the [online vignette](http://sahirbhatnagar.com/manhattanly/) for example us
 
 ## Credit
 
-This package is inspired by the [`qqman`](https://github.com/stephenturner/qqman) by [Stephen Turner](http://stephenturner.us/). The pre-processing of the data in the `manhattanly` package is based on the `qqman::manhattan` and `qqman::qq` functions. 
+This package is inspired by the [`qqman`](https://github.com/stephenturner/qqman) package by [Stephen Turner](http://stephenturner.us/). The pre-processing of the data in the `manhattanly` package is based on the `qqman::manhattan` and `qqman::qq` functions. 
 
 The splitting of the tasks into data pre-processing and plot rendering is inspired by the [`heatmaply`](https://github.com/talgalili/heatmaply) package by [Tal Galili](http://www.r-statistics.com/)
 
