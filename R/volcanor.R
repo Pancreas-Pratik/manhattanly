@@ -109,6 +109,26 @@ volcanor <- function(x,
     d[["ANNOTATION2"]] <- x[[annotation2]]
     colnames(d)[which(colnames(d) == "ANNOTATION2")] <- annotation2
   }
+  
+    if (!missing(annotation3)) {
+    d[["ANNOTATION3"]] <- x[[annotation1]]
+    colnames(d)[which(colnames(d) == "ANNOTATION3")] <- annotation3
+  }
+
+  if (!missing(annotation4)) {
+    d[["ANNOTATION4"]] <- x[[annotation4]]
+    colnames(d)[which(colnames(d) == "ANNOTATION4")] <- annotation4
+  }
+  
+  if (!missing(annotation5)) {
+    d[["ANNOTATION5"]] <- x[[annotation5]]
+    colnames(d)[which(colnames(d) == "ANNOTATION5")] <- annotation5
+  }
+
+  if (!missing(annotation6)) {
+    d[["ANNOTATION6"]] <- x[[annotation6]]
+    colnames(d)[which(colnames(d) == "ANNOTATION6")] <- annotation6
+  }
 
   # Observed and expected
   d[["LOG10P"]] <- -log10(d[["P"]])
@@ -121,7 +141,11 @@ volcanor <- function(x,
     snpName = if (missing(snp)) NA else snp,
     geneName = if (missing(gene)) NA else gene,
     annotation1Name = if (missing(annotation1)) NA else annotation1,
-    annotation2Name = if (missing(annotation2)) NA else annotation2
+    annotation2Name = if (missing(annotation2)) NA else annotation2,
+    annotation3Name = if (missing(annotation3)) NA else annotation3,
+    annotation4Name = if (missing(annotation4)) NA else annotation4,
+    annotation5Name = if (missing(annotation5)) NA else annotation5,
+    annotation6Name = if (missing(annotation6)) NA else annotation6
   )
 
   class(volcanor) <- "volcanor"
